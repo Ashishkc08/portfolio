@@ -67,6 +67,8 @@ const ProjectCard = ({ icon, title, body, link }) => {
         .project-card .btn {
           margin-top: auto;
           margin-bottom: 10px;
+          background-color: #008080; /* Button color updated */
+          border: none;
         }
 
         .icon-container {
@@ -75,7 +77,7 @@ const ProjectCard = ({ icon, title, body, link }) => {
 
         .icon {
           font-size: 80px;
-          color: #007bff;
+          color: #008080;
         }
 
         .btn.disabled {

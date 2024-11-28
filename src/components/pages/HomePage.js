@@ -1,32 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import ProjectsSection from "./ProjectSection";
 
 
 const HomePage = () => {
-  const [text, setText] = useState("");
+  
   const fullText = "Hi, I'm Ashish Karamchandani, a passionate developer focused on creating innovative solutions with modern technologies like React, Node.js, and .NET.";
 
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
-  useEffect(() => {
-    let index = -1;
-    setText("");
-
-    const updateText = () => {
-      if (index < fullText.length - 1) {
-        setText((prev) => prev + fullText[index]);
-        index++;
-        setTimeout(updateText, 30);
-      }
-    };
-
-    
-    updateText();
-    
-    return () => {
-      index = fullText.length;
-    };
-  }, []);
+  
 
   const handleDownloadClick = () => {
     setShowSuccessMessage(true);
@@ -41,7 +23,7 @@ const HomePage = () => {
       <section className="hero text-center py-5">
         <div className="container">
           <h1 className="display-4">Welcome to My Portfolio</h1>
-          <p className="lead animated-text">{text}</p>
+          <p className="lead animated-text">{fullText}</p>
           
           {/* Elegant Resume Download Button */}
           <a
@@ -71,7 +53,7 @@ const HomePage = () => {
 
       {/* Skills Section */}
       <section className="skills text-center py-5">
-        <h2>Skills</h2>
+        {/* <h2>Skills</h2> */}
         <div className="container">
           {/* Skills Grid */}
 
@@ -179,7 +161,7 @@ const HomePage = () => {
 
         /* Elegant Resume Download Button */
         .btn-custom {
-          background-color: #007bff;
+          background-color: #008080;
           color: #fff;
           font-weight: bold;
           border-radius: 50px;
@@ -191,7 +173,7 @@ const HomePage = () => {
         }
 
         .btn-custom:hover {
-          background-color: #0056b3;
+          background-color: #006666;
           box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
         }
 
@@ -253,15 +235,17 @@ const HomePage = () => {
         }
 
         .contact .btn-primary {
-          background-color: #007bff;
+          background-color: #008080;
           color: #ffffff;
-          border: 1px solid #007bff;
+          border: 1px solid #008080;
         }
 
         .contact .btn-primary:hover {
-          background-color: #0056b3;
-          border-color: #0056b3;
+          background-color: #006666;
+          border-color: #006666;
         }
+
+        
       `}</style>
     </div>
   );

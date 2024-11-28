@@ -58,7 +58,7 @@ function SkillsCard() {
 
   .card-icon {
     font-size: 3rem;
-    color: #007bff;
+    color: #008080;
   }
 
   .card-title {

@@ -13,8 +13,8 @@ const ProjectCard = ({ icon, title, body, link }) => {
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{body}</p>
         <a
-          href={isLinkAvailable ? link : "#"} // Only set valid link
-          className={`btn btn-primary ${!isLinkAvailable ? "disabled" : ""}`} // Apply disabled class
+          href={isLinkAvailable ? link : "#"} 
+          className={`btn btn-primary ${!isLinkAvailable ? "disabled" : ""}`}
           target={isLinkAvailable ? "_blank" : undefined} // Open in new tab if valid link
           rel={isLinkAvailable ? "noopener noreferrer" : undefined} // Security for new tab links
           onClick={(e) => !isLinkAvailable && e.preventDefault()} // Prevent click if link is not available

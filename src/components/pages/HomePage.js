@@ -162,6 +162,8 @@ const HomePage = () => {
         /* Elegant Resume Download Button */
         .btn-custom {
           background-color: #008080;
+          width:100%;
+          max-width:300px;
           color: #fff;
           font-weight: bold;
           border-radius: 50px;

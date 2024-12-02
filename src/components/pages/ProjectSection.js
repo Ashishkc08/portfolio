@@ -1,24 +1,24 @@
 import React from "react";
-import ProjectCard from "../common/ProjectCard";
+import ProjectCard from "../common/ProjectCard2"; // Import the updated ProjectCard
 import { projectData } from "../../data/ProjectData";
-
 
 const ProjectsSection = () => {
   return (
-    <div className="container my-5">
-      <h2 className="text-center mb-5">My Projects</h2>
-      <div className="row row-cols-1 row-cols-md-3 g-4">
-        {/* Map through the projectData array to render each project */}
-        {projectData.map((project) => (
-          <div className="col" key={project.id}>
+    <div className="projects-page py-5">
+      <div className="container">
+        <h2 className="section-title text-center mb-5">My Projects</h2>
+
+        <div className="row">
+          {projectData.map((project, index) => (
             <ProjectCard
-              icon={project.icon} 
+              key={index}
               title={project.title}
-              body={project.body} 
-              link={project.link}
+              description={project.body} // Adjusted to match `ProjectCard2`'s props
+              demoLink={project.link}   // Pass the link for the button
+              icon={project.icon}       // Include the icon if available
             />
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

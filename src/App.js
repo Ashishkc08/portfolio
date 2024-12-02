@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Im
 
 const App = () => {
   return (
-    <Router>
+    <Router >
     {/* <NavBar/>
     <Footer/> */}
     <NavBar /> {/* Your navigation bar */}

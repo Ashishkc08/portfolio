@@ -126,7 +126,7 @@ const HomePage = () => {
       <section className="contact text-center py-5">
         <h2>Contact Me</h2>
         <p>If you'd like to collaborate or just want to say hi, feel free to reach out!</p>
-        <a href="mailto:ashish@example.com" className="btn btn-primary">
+        <a href="mailto:ashishwork08@gmail.com" className="btn btn-primary">
           Email Me
         </a>
       </section>

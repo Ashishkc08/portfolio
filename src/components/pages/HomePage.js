@@ -27,8 +27,8 @@ const HomePage = () => {
           
           {/* Elegant Resume Download Button */}
           <a
-            href="https://drive.google.com/uc?export=download&id=1JL4WF_6ie65VBZ-ZRS4Z8fWt0-3dzwo7"
-            download="Ashish_Karamchandani_Resume.pdf"
+            href="https://drive.google.com/uc?export=download&id=1baN7G2ii7nRijDTAbSa2ao18BcSvlz6j"
+            download="Ashish_Karamchandani_Resume"
             className="btn btn-custom mt-3"
             onClick={handleDownloadClick}
           >
